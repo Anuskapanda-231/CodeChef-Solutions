@@ -1,0 +1,15 @@
+    public static int findMaxConsecutiveOnes(int[] nums) {
+       //write code here...
+       
+       int count =0 ,maxcount =0;
+       for(int num :nums){
+           if(num ==1){
+           count++;
+           maxcount = Math.max(maxcount,count);
+           }
+           else
+               count =0 ;
+           
+        }
+        return maxcount ;   
+    }
