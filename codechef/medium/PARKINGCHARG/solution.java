@@ -7,12 +7,14 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-        Scanner sc =  new Scanner(System.in);
-        
-        int X = sc.nextInt(),Y=sc.nextInt();
-        
-        int maxcus = X*Y ;
-        
-        System.out.println(maxcus);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int X =sc.nextInt(), Y = sc.nextInt(), H=sc.nextInt();
+		
+		int charge = (X*1 + Y*(H-1));
+		
+		System.out.println(charge);
+
 	}
 }
