@@ -4,14 +4,26 @@
 
 ## Problem
 
-_Description not available._
+Write a program using a for loop to calculate the sum of the first 10 natural numbers.
+
+### Sample 1:
+Input
+Output
+
+```
+
+```
+
+```
+55
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T07:13:55.738Z  
+**Submitted:** 2026-09-23T07:15:50.225Z  
 
 ```java
 class Codechef
@@ -19,12 +31,11 @@ class Codechef
 	public static void main (String[] args) 
 	{
 		// your code goes here
-       int i =1;
-       
-       while(i<=5){
-           System.out.println(i*i);
-           i++;
-       }
+		int sum =0;
+		for(int i = 1 ; i<=10;i++){
+		    sum+=i;
+		}
+        System.out.println(sum);
 	}
 }
 
