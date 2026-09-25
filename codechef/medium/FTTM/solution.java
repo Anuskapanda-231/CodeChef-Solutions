@@ -7,15 +7,18 @@ class Codechef
     public static String findterm(String s ,String t){
         
         
-        String[] word = s.split(" ");
+    
         boolean isFound = false ;
-        for(String words : word){
-            if(words.equals(t)){
-                isFound=true;
+       for (int i = 0; i <= s.length() - t.length(); i++)
+        {
+            String part = s.substring(i, i + t.length());
+
+            if (part.equals(t))
+            {
+                isFound = true;
+                break;
             }
-            
         }
-        
         return isFound ? "YES" : "NO";
     }
 	public static void main (String[] args) throws java.lang.Exception
