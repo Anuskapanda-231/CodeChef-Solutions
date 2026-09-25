@@ -67,7 +67,7 @@ Since `x` comes first alphabetically, the answer is `x`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T12:36:05.285Z  
+**Submitted:** 2026-09-25T12:38:17.986Z  
 
 ```java
 import java.util.*;
@@ -80,7 +80,7 @@ class Codechef
     
     public static char getmostfreqletter(String s){
         
-        int[] freq = new int[25];
+        int[] freq = new int[26];
         
         for(int i=0;i<s.length();i++){
             char ch = Character.toLowerCase(s.charAt(i));
@@ -92,7 +92,7 @@ class Codechef
         
         int maxval=0;
         char answer ='a';
-        for(int i=0;i<25;i++){
+        for(int i=0;i<26;i++){
             if(freq[i]>maxval){
                 maxval=freq[i];
                 answer =(char) (i +'a');
