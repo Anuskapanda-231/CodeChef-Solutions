@@ -8,7 +8,7 @@ class Codechef
     
     public static char getmostfreqletter(String s){
         
-        int[] freq = new int[25];
+        int[] freq = new int[26];
         
         for(int i=0;i<s.length();i++){
             char ch = Character.toLowerCase(s.charAt(i));
@@ -20,7 +20,7 @@ class Codechef
         
         int maxval=0;
         char answer ='a';
-        for(int i=0;i<25;i++){
+        for(int i=0;i<26;i++){
             if(freq[i]>maxval){
                 maxval=freq[i];
                 answer =(char) (i +'a');
