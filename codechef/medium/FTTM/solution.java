@@ -3,40 +3,31 @@ import java.lang.*;
 import java.io.*;
 
 class Codechef
-{   
-    
-    
-    public static char getmostfreqletter(String s){
+{
+    public static String findterm(String s ,String t){
         
-        int[] freq = new int[26];
         
-        for(int i=0;i<s.length();i++){
-            char ch = Character.toLowerCase(s.charAt(i));
+        String[] word = s.split(" ");
+        boolean isFound = false ;
+        for(String words : word){
+            if(words.equals(t)){
+                isFound=true;
+            }
             
-            if(Character.isLetter(ch)){
-                freq[ch-'a']++;
-            }
         }
         
-        int maxval=0;
-        char answer ='a';
-        for(int i=0;i<26;i++){
-            if(freq[i]>maxval){
-                maxval=freq[i];
-                answer =(char) (i +'a');
-            }
-        }
-        return answer;
-        
+        return isFound ? "YES" : "NO";
     }
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
+		
 		Scanner sc = new Scanner(System.in);
 		
-		String s = sc.nextLine();
+		String s =sc.nextLine();
+		String t = sc.nextLine();
 		
-		System.out.println(getmostfreqletter(s));
+		System.out.println(findterm(s,t));
 
 	}
 }
