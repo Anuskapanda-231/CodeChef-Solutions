@@ -55,7 +55,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-01T15:22:08.896Z  
+**Submitted:** 2026-10-01T15:24:31.819Z  
 
 ```java
 import java.util.Scanner;
@@ -74,19 +74,11 @@ public class Main {
             int countone =0;
             for(int i=0; i<n;i++){
                 if(s.charAt(i)!=r.charAt(i)){
-                    sb.append('1');
-                }
-                else{
-                sb.append('0');
-                }
-            }
-            
-            for(int i=0;i<n;i++){
-                if(sb.charAt(i)=='1'){
                     countone++;
                 }
+               
             }
-            
+           
             if(countone%2==0){
                 System.out.println("1");
             }
