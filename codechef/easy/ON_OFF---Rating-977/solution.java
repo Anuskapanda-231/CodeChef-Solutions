@@ -14,19 +14,11 @@ public class Main {
             int countone =0;
             for(int i=0; i<n;i++){
                 if(s.charAt(i)!=r.charAt(i)){
-                    sb.append('1');
-                }
-                else{
-                sb.append('0');
-                }
-            }
-            
-            for(int i=0;i<n;i++){
-                if(sb.charAt(i)=='1'){
                     countone++;
                 }
+               
             }
-            
+           
             if(countone%2==0){
                 System.out.println("1");
             }
